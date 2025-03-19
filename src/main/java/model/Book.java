@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 
 
 /*
-    Following the below, you are running into the danger of not being able to remember how to build your own MVC
+    This is certainly one of the more old school ways of building out an MVC application -> also look to Java 21, in order to revitalise the programming style eventually
+
  */
 @Entity
 @Table(name = "books")
@@ -35,6 +36,26 @@ public class Book {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getIsbn() {
+        return isbn;
     }
 
 
